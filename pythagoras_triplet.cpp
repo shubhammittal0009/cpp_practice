@@ -3,9 +3,9 @@
 using namespace std;
 int main(){
 
-	int n=0;
+	long long n=0;
 	cin>>n;
-	int a=0,b=0;
+	long long a=0,b=0;
 
 	//LOGIC 
 
@@ -20,21 +20,30 @@ int main(){
 	// ( ((((n+1)/2)^2) - ((n-1)/2)^2), 2*((n+1)/2)*((n-1)/2), ((((n+1)/2)^2) + ((n-1)/2)^2) )
 
 	// CODE
-	if(n%2==0){
 
-		a = (pow((n/2), 2) - 1);
-		b = (pow((n/2), 2) + 1);
+	if(n==1){
 
-	}else{
+		cout<<-1<<endl;
 
-		a = (2)*(n+1/2)*(n-1/2);
+	}else if(n%2==0){
+
+		a = (((n*n)/4) - 1);
+		b = (((n*n)/4) + 1);
+
+	}else if(n%2!=0){
+
+		a = (2)*((n+1)/2)*((n-1)/2);
 		
 		if(n>a){
-			b = (pow((n+1/2),2)-pow((n-1/2),2));
+			b = (pow(((n+1)/2),2)-pow(((n-1)/2),2));
 		}else{
-			b = (pow((n+1/2),2)+pow((n-1/2),2));
+			b = (pow(((n+1)/2),2)+pow(((n-1)/2),2));
 		}
 	
+	}else{
+
+		cout<<-1<<endl;
+
 	}
 
 	cout<<a<<" "<<b<<endl;
