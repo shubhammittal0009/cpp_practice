@@ -12,6 +12,11 @@ int main(){
 	cin>>t;
 	while(t--){
 
+		cab1=0; 
+		cab2=0; 
+		rik1=0; 
+		rik2=0;
+
 		// Taking Inputs
 		cin>>c1>>c2>>c3>>c4;
 
