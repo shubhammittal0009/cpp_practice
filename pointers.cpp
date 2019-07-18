@@ -17,5 +17,10 @@ int main(){
 	cout<<&x<<endl;
 	cout<<xptr<<endl;
 
+	int y1 = 7;
+
+	xptr = &y1;
+	cout<<&y1<<endl;
+
 	return 0;
 } 
