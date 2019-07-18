@@ -15,6 +15,7 @@ int main(){
 	cout<<sizeof(chptr)<<endl;
 
 	cout<<&x<<endl;
+	cout<<xptr<<endl;
 
 	return 0;
 } 
