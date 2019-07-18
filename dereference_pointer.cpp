@@ -23,5 +23,7 @@ int main(){
 	cout<<&y1<<endl;
 	cout<<xptr<<endl;
 
+	cout<<*xptr<<endl;
+
 	return 0; 
 } 
