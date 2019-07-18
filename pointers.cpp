@@ -21,6 +21,7 @@ int main(){
 
 	xptr = &y1;
 	cout<<&y1<<endl;
+	cout<<xptr<<endl;
 
 	return 0;
 } 
