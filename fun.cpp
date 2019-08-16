@@ -12,7 +12,7 @@ int nCr(int n, int r){
   int nfact = fact(n);
   int rfact = fact(r);
   int nrfact = fact(n-r);
-  int result = ((nfact*rfact)/nrfact);
+  int result = (nfact / (rfact * nrfact));
   return result;
 }
 
