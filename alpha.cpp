@@ -9,17 +9,14 @@ int ans = 0;
     ans += num;
   return ans;
 }
-
 int combination(int i, int j){
   int ans=0;
   ans = int((fact(i))/((fact(i-j))*(fact(j))));
   return ans;
 }
-
 int main() {
         int n=0;
         cin>>n;
-
     for(int i=0; i<n; i++){
       for(int j=0; j<n; j++){
         cout<<combination(i,j)<<" ";
